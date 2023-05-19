@@ -13,7 +13,10 @@ pipeline {
     }
   
     stage('Build') {
+
         steps {
+                ls -lrt
+                pwd
                 sh 'python3 operations.py' 
         }
     }
